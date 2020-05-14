@@ -20,29 +20,10 @@ Current build status
 
 
 <table>
-    
   <tr>
-    <td>Azure</td>
+    <td>Linux</td>
     <td>
-      <details>
-        <summary>
-          <a href="https://dev.azure.com/ramonaoptics/feedstock-builds/_build/latest?definitionId=20&branchName=master">
-            <img src="https://dev.azure.com/ramonaoptics/feedstock-builds/_apis/build/status/hugin-feedstock?branchName=master">
-          </a>
-        </summary>
-        <table>
-          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
-          <tbody><tr>
-              <td>linux_python3.6.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/ramonaoptics/feedstock-builds/_build/latest?definitionId=20&branchName=master">
-                  <img src="https://dev.azure.com/ramonaoptics/feedstock-builds/_apis/build/status/hugin-feedstock?branchName=master&jobName=linux&configuration=linux_python3.6.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </details>
+      <img src="https://img.shields.io/badge/linux-disabled-lightgrey.svg" alt="linux disabled">
     </td>
   </tr>
   <tr>
