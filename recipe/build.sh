@@ -10,5 +10,5 @@ cmake -LAH                              \
     -DwxWidgets_LIBRARIES=${PREFIX}/lib   \
     ..
 
-make -j${CPU_COUNT}
+make VERBOSE=1 V=1
 make install
