@@ -10,7 +10,7 @@ source:
 
 build:
   skip: true  # [not linux]
-  skip: true  # [not py36]
+  skip: true  # [not py37]
   number: 0
 
 requirements:
