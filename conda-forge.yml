@@ -1,1 +1,6 @@
-{}
+github:
+  user_or_org: ramonaoptics
+channels:
+  targets:
+  -
+    - ramonaoptics
