@@ -4,3 +4,11 @@ libselinux
 libXdamage
 libXxf86vm
 libXext
+
+libXfixes
+libXinerama
+libXrandr
+libXcursor
+libXcomposite
+libX11
+libXi
