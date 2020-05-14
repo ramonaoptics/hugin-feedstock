@@ -1,5 +1,9 @@
 set -ex
 
+# For some reason, we cannot find WX_libraries easily
+WX_LIBS=`wx-config --libs`
+export LIBS="${LIBS} ${WX_LIBS}"
+
 mkdir build
 cd build
 
