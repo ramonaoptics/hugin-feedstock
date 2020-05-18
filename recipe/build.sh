@@ -9,5 +9,5 @@ cmake -LAH                              \
     -DCMAKE_INSTALL_PREFIX=${PREFIX}    \
     ..
 
-make VERBOSE=1 V=1
+make
 make install
