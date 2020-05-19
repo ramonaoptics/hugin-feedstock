@@ -60,11 +60,10 @@ requirements:
     - glew
     - sqlite
     - lcms2
-    - wxwidgets 3.0
+    - wxwidgets
     - perl
   run:
     # not sure why run exports isn't working
-    - wxwidgets 3.0
     - exiftool
     - enblend
     - xorg-libx11  # [linux]
