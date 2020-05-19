@@ -11,7 +11,7 @@ source:
 
 build:
   skip: true  # [not linux]
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -60,9 +60,11 @@ requirements:
     - glew
     - sqlite
     - lcms2
-    - wxwidgets
+    - wxwidgets 3.0
     - perl
   run:
+    # not sure why run exports isn't working
+    - wxwidgets 3.0
     - exiftool
     - enblend
     - xorg-libx11  # [linux]
