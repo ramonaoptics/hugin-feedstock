@@ -11,7 +11,7 @@ source:
 
 build:
   skip: true  # [not linux]
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -66,6 +66,7 @@ requirements:
     # not sure why run exports isn't working
     - exiftool
     - enblend
+    - exiv2
     - xorg-libx11  # [linux]
     - xorg-libsm   # [linux]
 
