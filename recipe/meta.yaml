@@ -11,7 +11,7 @@ source:
 
 build:
   skip: true  # [not linux]
-  number: 2
+  number: 3
 
 requirements:
   build:
@@ -72,7 +72,7 @@ requirements:
 
 test:
   commands:
-    - echo hi
+    - nona -help
 
 about:
   home: https://github.com/simplejson/simplejson
