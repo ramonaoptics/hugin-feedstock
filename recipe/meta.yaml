@@ -1,14 +1,15 @@
 # We still can't build windows, so we build a dummy package with version 0
-{% set version = "2019.2" %}
+{% set version = "2019.2.0" %}
+{% set version_major_minor = ".".join(version.split('.')[:2]) %}
 
 package:
   name: hugin
   version: {{ version }}  # [not win]
-  version: 0.0  # [win]
+  version: 0.0            # [win]
 
 source:
   #url: https://pilotfiber.dl.sourceforge.net/project/hugin/hugin/hugin-{{ version }}/hugin-{{ version }}.0.tar.bz2
-  url: https://iweb.dl.sourceforge.net/project/hugin/hugin/hugin-2019.2/hugin-2019.2.0.tar.bz2
+  url: https://iweb.dl.sourceforge.net/project/hugin/hugin/hugin-{{ version_major_minor }}/hugin-{{ version }}.tar.bz2
   sha256: 8ba6bdfea246313f142f17f42e066c6888f51b72e4f8814b5e1c84ff56a95a3e
 
 build:
@@ -75,6 +76,7 @@ requirements:
 test:
   commands:
     - nona -help  # [linux]
+    - echo hi     # [not linux]
 
 about:
   home: http://hugin.sourceforge.net/
