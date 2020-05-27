@@ -15,7 +15,6 @@ build:
   skip: true  # [osx]
   number: 5
 
-
 requirements:
   build:
     - {{ compiler('c') }}
