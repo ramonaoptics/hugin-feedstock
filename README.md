@@ -1,18 +1,19 @@
 About hugin
 ===========
 
-Home: https://github.com/simplejson/simplejson
+Home: http://hugin.sourceforge.net/
 
-Package license: MIT
+Package license: GPL-2.0-only
 
 Feedstock license: BSD 3-Clause
 
-Summary: Simple, fast, extensible JSON encoder/decoder for Python
+Summary: Panorama photo stitcher
 
-simplejson is a simple, fast, complete, correct and extensible
-JSON <https://json.org> encoder and decoder for Python 2.5+ and
-Python 3.3+. It is pure Python code with no dependencies, but includes
-an optional C extension for a serious speed boost.
+Our goal an easy to use cross-platform panoramic imaging toolchain based on Panorama Tools.
+
+With Hugin you can assemble a mosaic of photographs into a complete
+immersive panorama, stitch any series of overlapping pictures and much
+more.
 
 
 Current build status
@@ -53,6 +54,27 @@ Current build status
                   <img src="https://dev.azure.com/ramonaoptics/feedstock-builds/_apis/build/status/hugin-feedstock?branchName=master&jobName=linux&configuration=linux_python3.8.____cpython" alt="variant">
                 </a>
               </td>
+            </tr><tr>
+              <td>win_python3.6.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/ramonaoptics/feedstock-builds/_build/latest?definitionId=20&branchName=master">
+                  <img src="https://dev.azure.com/ramonaoptics/feedstock-builds/_apis/build/status/hugin-feedstock?branchName=master&jobName=win&configuration=win_python3.6.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_python3.7.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/ramonaoptics/feedstock-builds/_build/latest?definitionId=20&branchName=master">
+                  <img src="https://dev.azure.com/ramonaoptics/feedstock-builds/_apis/build/status/hugin-feedstock?branchName=master&jobName=win&configuration=win_python3.7.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_python3.8.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/ramonaoptics/feedstock-builds/_build/latest?definitionId=20&branchName=master">
+                  <img src="https://dev.azure.com/ramonaoptics/feedstock-builds/_apis/build/status/hugin-feedstock?branchName=master&jobName=win&configuration=win_python3.8.____cpython" alt="variant">
+                </a>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -63,12 +85,6 @@ Current build status
     <td>OSX</td>
     <td>
       <img src="https://img.shields.io/badge/OSX-disabled-lightgrey.svg" alt="OSX disabled">
-    </td>
-  </tr>
-  <tr>
-    <td>Windows</td>
-    <td>
-      <img src="https://img.shields.io/badge/Windows-disabled-lightgrey.svg" alt="Windows disabled">
     </td>
   </tr>
   <tr>
@@ -135,6 +151,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@LandoCalrissian](https://github.com/LandoCalrissian/)
-* [@LisaSimpson](https://github.com/LisaSimpson/)
+* [@hmaarrfk](https://github.com/hmaarrfk/)
 
