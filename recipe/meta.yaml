@@ -20,11 +20,11 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - make
-    - cmake
+    - make   # [not win]
+    - cmake  # [not win]
     - swig
-    - binutils
-    - pkg-config
+    - binutils  # [linux]
+    - pkg-config  # [not win]
     - {{ cdt('mesa-libgl-devel') }}  # [linux]
     - {{ cdt('mesa-dri-drivers') }}  # [linux]
     - {{ cdt('libselinux') }}  # [linux]
