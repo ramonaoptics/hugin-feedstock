@@ -1,8 +1,10 @@
+# We still can't build windows, so we build a dummy package with version 0
 {% set version = "2019.2" %}
 
 package:
   name: hugin
-  version: {{ version }}
+  version: {{ version }}  # [not win]
+  version: 0.0  # [win]
 
 source:
   #url: https://pilotfiber.dl.sourceforge.net/project/hugin/hugin/hugin-{{ version }}/hugin-{{ version }}.0.tar.bz2
@@ -10,8 +12,9 @@ source:
   sha256: 8ba6bdfea246313f142f17f42e066c6888f51b72e4f8814b5e1c84ff56a95a3e
 
 build:
-  skip: true  # [not linux]
-  number: 4
+  skip: true  # [osx]
+  number: 5
+
 
 requirements:
   build:
@@ -64,42 +67,33 @@ requirements:
     - perl
   run:
     # not sure why run exports isn't working
-    - exiftool
-    - enblend
-    - exiv2
+    - exiftool  # [linux]
+    - enblend   # [linux]
+    - exiv2     # [linux]
     - xorg-libx11  # [linux]
     - xorg-libsm   # [linux]
 
 test:
   commands:
-    - nona -help
+    - nona -help  # [linux]
 
 about:
-  home: https://github.com/simplejson/simplejson
-  # Remember to specify the license variants for BSD, Apache, GPL, and LGPL.
-  # Prefer the short version, e.g: GPL-2.0 instead of GNU General Public License version 2.0
-  # See https://opensource.org/licenses/alphabetical
-  license: MIT
-  # The license_family, i.e. "BSD" if license is "BSD-3-Clause". (optional)
-  license_family: MIT
-  # It is strongly encouraged to include a license file in the package,
-  # (even if the license doesn't require it) using the license_file entry.
-  # See https://conda.pydata.org/docs/building/meta-yaml.html#license-file
+  home: http://hugin.sourceforge.net/
+  license: GPL-2.0-only
+  license_family: GPL
   license_file: COPYING.txt
-  summary: 'Simple, fast, extensible JSON encoder/decoder for Python'
+  summary: Panorama photo stitcher
 
-  # The remaining entries in this section are optional, but recommended.
   description: |
-    simplejson is a simple, fast, complete, correct and extensible
-    JSON <https://json.org> encoder and decoder for Python 2.5+ and
-    Python 3.3+. It is pure Python code with no dependencies, but includes
-    an optional C extension for a serious speed boost.
-  doc_url: https://simplejson.readthedocs.io/
-  dev_url: https://github.com/simplejson/simplejson
+     Our goal an easy to use cross-platform panoramic imaging toolchain based on Panorama Tools.
+
+    With Hugin you can assemble a mosaic of photographs into a complete
+    immersive panorama, stitch any series of overlapping pictures and much
+    more.
+
+  doc_url: http://hugin.sourceforge.net/docs/
+  dev_url: https://sourceforge.net/projects/hugin/
 
 extra:
   recipe-maintainers:
-    # GitHub IDs for maintainers of the recipe.
-    # Always check with the people listed below if they are OK becoming maintainers of the recipe. (There will be spam!)
-    - LisaSimpson
-    - LandoCalrissian
+    - hmaarrfk
