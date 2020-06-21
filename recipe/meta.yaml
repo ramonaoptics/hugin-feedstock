@@ -66,6 +66,9 @@ requirements:
     - lcms2
     - wxwidgets 3.1
     - perl
+    # For some reason these are requried by the windows
+    # build system
+    - enblend
   run:
     # not sure why run exports isn't working
     - exiftool
