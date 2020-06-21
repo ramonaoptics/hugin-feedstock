@@ -13,7 +13,7 @@ source:
 
 build:
   skip: true  # [osx]
-  skip: true  # [linux]
+  # skip: true  # [linux]
   number: 6
 
 requirements:
