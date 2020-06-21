@@ -4,8 +4,7 @@
 
 package:
   name: hugin
-  version: {{ version }}  # [not win]
-  version: 0.0            # [win]
+  version: {{ version }}
 
 source:
   #url: https://pilotfiber.dl.sourceforge.net/project/hugin/hugin/hugin-{{ version }}/hugin-{{ version }}.0.tar.bz2
@@ -21,7 +20,8 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - make   # [not win]
-    - cmake  # [not win]
+    - ninja  # [win]
+    - cmake
     - swig
     - binutils  # [linux]
     - pkg-config  # [not win]
@@ -67,9 +67,9 @@ requirements:
     - perl
   run:
     # not sure why run exports isn't working
-    - exiftool  # [linux]
-    - enblend   # [linux]
-    - exiv2     # [linux]
+    - exiftool
+    - enblend
+    - exiv2
     - xorg-libx11  # [linux]
     - xorg-libsm   # [linux]
 
@@ -99,4 +99,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - hmaarrfk
+    - hmaark
