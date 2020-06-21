@@ -10,6 +10,9 @@ cmake -LAH -G Ninja                     ^
     -DCMAKE_BUILD_TYPE="Release"        ^
     -DCMAKE_PREFIX_PATH=%PREFIX%        ^
     -DCMAKE_INSTALL_PREFIX=%PREFIX%     ^
+    -DwxWidgets_ROOT_DIR=%LIBRARY_PREFIX% ^
+    -DwxWidgets_INCLUDE_DIRS=%LIBRARY_INC%\wx ^
+    -wxWidgets_LIBRARIES=%LIBRARY_INC%\lib ^
     ..
 if errorlevel 1 exit 1
 
