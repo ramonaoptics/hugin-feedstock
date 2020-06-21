@@ -59,7 +59,7 @@ requirements:
     - jpeg
     - libpng
     - openexr
-    - vigra 1.11.1=*_1016
+    - vigra 1.11.1=*_1017
     - exiv2
     - glew
     - sqlite
