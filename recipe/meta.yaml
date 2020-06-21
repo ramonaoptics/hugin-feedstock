@@ -14,7 +14,7 @@ source:
 
 build:
   skip: true  # [osx]
-  number: 5
+  number: 6
 
 requirements:
   build:
@@ -75,8 +75,10 @@ requirements:
 
 test:
   commands:
-    - nona -help  # [linux]
-    - echo hi     # [not linux]
+    - nona -help
+    - cpfind -help
+    - autooptimiser -help
+    - pano_modify -help
 
 about:
   home: http://hugin.sourceforge.net/
