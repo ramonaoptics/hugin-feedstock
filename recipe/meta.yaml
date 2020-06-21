@@ -59,6 +59,7 @@ requirements:
     - jpeg
     - libpng
     - openexr
+    # build 1017 has openexr support
     - vigra 1.11.1=*_1017
     - exiv2
     - glew
