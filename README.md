@@ -9,7 +9,7 @@ Feedstock license: BSD 3-Clause
 
 Summary: Panorama photo stitcher
 
-Our goal an easy to use cross-platform panoramic imaging toolchain based on Panorama Tools.
+An easy to use cross-platform panoramic imaging toolchain based on Panorama Tools.
 
 With Hugin you can assemble a mosaic of photographs into a complete
 immersive panorama, stitch any series of overlapping pictures and much
@@ -34,27 +34,6 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_python3.6.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/ramonaoptics/feedstock-builds/_build/latest?definitionId=20&branchName=master">
-                  <img src="https://dev.azure.com/ramonaoptics/feedstock-builds/_apis/build/status/hugin-feedstock?branchName=master&jobName=linux&configuration=linux_python3.6.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_python3.7.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/ramonaoptics/feedstock-builds/_build/latest?definitionId=20&branchName=master">
-                  <img src="https://dev.azure.com/ramonaoptics/feedstock-builds/_apis/build/status/hugin-feedstock?branchName=master&jobName=linux&configuration=linux_python3.7.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_python3.8.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/ramonaoptics/feedstock-builds/_build/latest?definitionId=20&branchName=master">
-                  <img src="https://dev.azure.com/ramonaoptics/feedstock-builds/_apis/build/status/hugin-feedstock?branchName=master&jobName=linux&configuration=linux_python3.8.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>win_python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/ramonaoptics/feedstock-builds/_build/latest?definitionId=20&branchName=master">
@@ -79,6 +58,12 @@ Current build status
           </tbody>
         </table>
       </details>
+    </td>
+  </tr>
+  <tr>
+    <td>Linux</td>
+    <td>
+      <img src="https://img.shields.io/badge/linux-disabled-lightgrey.svg" alt="linux disabled">
     </td>
   </tr>
   <tr>
@@ -151,5 +136,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@hmaarrfk](https://github.com/hmaarrfk/)
+* [@hmaark](https://github.com/hmaark/)
 
