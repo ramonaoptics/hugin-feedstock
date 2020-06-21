@@ -14,18 +14,18 @@ source:
 build:
   skip: true  # [osx]
   # skip: true  # [linux]
-  number: 6
+  number: 7
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - make   # [not win]
+    - make   # [unix]
     - ninja  # [win]
     - cmake
     - swig
     - binutils  # [linux]
-    - pkg-config  # [not win]
+    - pkg-config  # [unix]
     - {{ cdt('mesa-libgl-devel') }}  # [linux]
     - {{ cdt('mesa-dri-drivers') }}  # [linux]
     - {{ cdt('libselinux') }}  # [linux]
@@ -59,7 +59,7 @@ requirements:
     - jpeg
     - libpng
     - openexr
-    - vigra
+    - vigra 1.11.1=*=1016
     - exiv2
     - glew
     - sqlite
