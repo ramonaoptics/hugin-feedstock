@@ -70,7 +70,9 @@ requirements:
     # For some reason these are requried by the windows
     # build system
     - enblend
+    - pthreads-win32  # [win]
   run:
+    - pthreads-win32  # [win]
     # not sure why run exports isn't working
     - exiftool
     - enblend
