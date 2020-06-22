@@ -15,6 +15,7 @@ cmake -LAH -G Ninja                           ^
     -wxWidgets_LIBRARIES=%LIBRARY_INC%\lib    ^
     -DENBLEND_DIR=%LIBRARY_PREFIX%            ^
     -DOPENEXR_BIN_DIR=%LIBRARY_BIN%           ^
+    -DHUGIN_BUILDER="RamonaOptics"            ^
     ..
 if errorlevel 1 exit 1
 
