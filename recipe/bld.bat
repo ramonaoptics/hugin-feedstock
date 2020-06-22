@@ -14,6 +14,7 @@ cmake -LAH -G Ninja                           ^
     -DwxWidgets_INCLUDE_DIRS=%LIBRARY_INC%\wx ^
     -wxWidgets_LIBRARIES=%LIBRARY_INC%\lib    ^
     -DENBLEND_DIR=%LIBRARY_PREFIX%            ^
+    -OPENEXR_BIN_DIR=%LIBRARY_BIN%            ^
     ..
 if errorlevel 1 exit 1
 
