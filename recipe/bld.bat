@@ -18,6 +18,12 @@ cmake -LAH -G Ninja                           ^
     -wxWidgets_LIBRARIES=%LIBRARY_INC%\lib    ^
     -DENBLEND_DIR=%LIBRARY_PREFIX%            ^
     -DOPENEXR_BIN_DIR=%LIBRARY_BIN%           ^
+    -DPANO13_DLL=%LIBRARY_BIN%\pano13.dll     ^
+    -DPANO13_EXE_DIR=%LIBRARY_BIN%            ^
+    -DPNG_DLL=%LIBRARY_BIN%\libpng16.dll      ^
+    -DTIFF_DLL=%LIBRARY_BIN%\libtiff.dll      ^
+    -DEXIFVTOOL_EXE=%LIBRARY_BIN%\exiftool    ^
+    -DEXIV2_DLL=%LIBRARY_BIN%\exiv2.dll       ^
     -DHUGIN_BUILDER="RamonaOptics"            ^
     ..
 if errorlevel 1 exit 1
