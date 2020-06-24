@@ -23,10 +23,13 @@ cmake -LAH -G Ninja                           ^
     -DEXIV2_DLL=%LIBRARY_BIN%\exiv2.dll       ^
     -DGLEW_DLL=%LIBRARY_BIN%\glew32.dll       ^
     -DJPEG_DLL=%LIBRARY_BIN%\libjpeg.dll      ^
+    -DLIBEXPAT_DLL=%LIBRARY_BIN%\libexpat.dll ^
     -DPANO13_DLL=%LIBRARY_BIN%\pano13.dll     ^
     -DPANO13_EXE_DIR=%LIBRARY_BIN%            ^
     -DPNG_DLL=%LIBRARY_BIN%\libpng16.dll      ^
+    -DSQLITE3_DLL=%LIBRARY_BIN%\sqlite3.dll   ^
     -DTIFF_DLL=%LIBRARY_BIN%\libtiff.dll      ^
+    -DVIGRA_DLL=%LIBRARY_BIN%\vigraimpex.dll  ^
     ..
 
 if errorlevel 1 exit 1
