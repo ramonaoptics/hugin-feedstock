@@ -30,6 +30,7 @@ cmake -LAH -G Ninja                           ^
     -DSQLITE3_DLL=%LIBRARY_BIN%\sqlite3.dll   ^
     -DTIFF_DLL=%LIBRARY_BIN%\libtiff.dll      ^
     -DVIGRA_DLL=%LIBRARY_BIN%\vigraimpex.dll  ^
+    -DEXIFTOOL_EXE_DIR=%LIBRARY_BIN%          ^
     ..
 
 if errorlevel 1 exit 1
