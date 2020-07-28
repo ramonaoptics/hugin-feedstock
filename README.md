@@ -5,7 +5,7 @@ Home: http://hugin.sourceforge.net/
 
 Package license: GPL-2.0-only
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Panorama photo stitcher
 
@@ -151,5 +151,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@hmaark](https://github.com/hmaark/)
+* [@hmaarrfk](https://github.com/hmaarrfk/)
 

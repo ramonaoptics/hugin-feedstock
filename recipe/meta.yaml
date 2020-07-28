@@ -9,12 +9,12 @@ source:
   #url: https://pilotfiber.dl.sourceforge.net/project/hugin/hugin/hugin-{{ version }}/hugin-{{ version }}.0.tar.bz2
   url: https://iweb.dl.sourceforge.net/project/hugin/hugin/hugin-{{ version_major_minor }}/hugin-{{ version }}.tar.bz2
   sha256: 8ba6bdfea246313f142f17f42e066c6888f51b72e4f8814b5e1c84ff56a95a3e
-  # patches:
-    # - windows_unbundle.patch
+  patches:
+    - windows_unbundle.patch
 
 build:
   skip: true  # [osx]
-  number: 10
+  number: 11
 
 requirements:
   build:
@@ -67,22 +67,38 @@ requirements:
     - glew
     - sqlite
     - lcms2
+    # Warning: With vanially conda, wxwidgets will not work on linux since they
+    # internally code strings as UTF-16 strings on windows
+    # conda-forge has patched conda: https://github.com/conda-forge/conda-feedstock/pull/117
+    # But upstream has rejected a similar patch:
+    # https://github.com/conda/conda/pull/9946
+    # In favor of more time to work on a longer term fix
+    # https://github.com/conda/conda-build/blob/master/tests/test_api_build.py#L240
     - wxwidgets 3.1
     - perl
     - libglu  # [linux]
-    - boost   # [linux]
-    - fftw    # [linux]
+    # boost was already migrated for vigra, and the build we
+    # need uses boost 1.72
+    - boost 1.72
+    - boost-cpp 1.72
+    - fftw
     # For some reason these are requried by the windows
     # build system
     - enblend
     - pthreads-win32  # [win]
+    - ilmbase
   run:
+    - boost 1.72
+    - boost-cpp 1.72
+    - libglu  # [linux]
     - python
     - pthreads-win32  # [win]
     # not sure why run exports isn't working
     - exiftool
     - enblend
     - exiv2
+    # Needs: https://github.com/conda-forge/vigra-feedstock/pull/63
+    - vigra  1.11.1=*_1017
     - xorg-libx11  # [linux]
     - xorg-libsm   # [linux]
 
