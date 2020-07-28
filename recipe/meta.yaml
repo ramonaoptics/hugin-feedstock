@@ -80,6 +80,8 @@ requirements:
     - pthreads-win32  # [win]
   run:
     - python
+    # needs https://github.com/conda-forge/vigra-feedstock/pull/63
+    - vigra
     - pthreads-win32  # [win]
     # not sure why run exports isn't working
     - exiftool
