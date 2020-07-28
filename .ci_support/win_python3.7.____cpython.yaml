@@ -6,6 +6,8 @@ channel_targets:
 - ramonaoptics main
 cxx_compiler:
 - vs2017
+fftw:
+- '3'
 glew:
 - '2.1'
 jpeg:
@@ -17,6 +19,8 @@ libtiff:
 perl:
 - 5.26.2
 pin_run_as_build:
+  fftw:
+    max_pin: x
   glew:
     max_pin: x.x
   jpeg:
